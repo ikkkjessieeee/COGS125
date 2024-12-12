@@ -3,8 +3,10 @@
 }
 
 body {
-  font-family: sans-serif;
-  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Set light pink background color */
+  color: #333;
+  margin: 0;
   padding: 0;
 }
 
@@ -46,39 +48,127 @@ ul {
   padding-inline-start: 20px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  margin: 0;
-  padding: 0;
+header {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Center navigation */
+  background-color: #fff; /* Change background color to white */
+  padding: 20px 30px; /* Add more padding for a larger header */
+  border-bottom: 2px solid #ccc; /* Add a light underline */
+  position: relative; /* Allows independent positioning of h1 */
 }
 
-header {
-  h1 {
-    color: #fff;
+header h1 {
+  font-size: 2.4rem; /* Increase the font size */
+  margin: 0;
+  position: absolute;
+  left: 30px; /* Position the title to the left */
+  a {
+    text-decoration: none;
+    color: #fcc5cf; /* Make the header text darker for readability */
   }
-  display: flex;
-  justify-content: left;
-  background-color: #333;
+  header h1 a:visited {
+    color: #fcc5cf; /* Ensure the color stays the same after visiting */
+  }
 }
 
 nav {
   display: flex;
-  justify-content: center;
-  padding: 15px;
+  gap: 25px; /* Add spacing between navigation links */
 }
 
 nav a {
-  color: #fff;
-  margin: 0 15px;
+  color: #333; /* Match the darker text color */
   text-decoration: none;
+  font-size: 1.2rem; /* Slightly larger text for navigation links */
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #ddd;
+  color: #666; /* Add a subtle hover effect */
 }
+
+
+/* About Page */
+.about-container {
+  display: flex; /* Enable flexbox for side-by-side layout */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Add spacing between text and image */
+  max-width: 1200px; /* Limit the container width */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add padding for better spacing */
+}
+
+.about-text {
+  flex: 2; /* Allocate more space for the text */
+  text-align: left; /* Align text to the left */
+}
+
+.about-text h1 {
+  font-size: 2rem; /* Adjust font size */
+  font-weight: normal; /* Remove boldness */
+  margin-bottom: 10px; /* Add spacing below the heading */
+  color: #333; /* Use a neutral color */
+}
+
+.about-text p {
+  font-size: 1rem; /* Adjust font size for readability */
+  line-height: 1.6; /* Improve spacing between lines */
+  color: #555; /* Use a softer text color */
+}
+
+.about-image {
+  flex: 1; /* Allocate less space for the image */
+  text-align: center; /* Center the image within its container */
+}
+
+.about-image img {
+  max-width: 50%; /* Scale the image to half its original size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin: 0 auto; /* Center the image within its container */
+}
+
+/* work (projects) page */
+.project-gallery {
+  display: flex;
+  gap: 15px; /* Space between cards */
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping of cards */
+}
+
+.project {
+  flex: 1 1 45%; /* Responsive sizing for cards */
+  max-width: 250px; /* Set a maximum width for cards */
+  background-color: #fff; /* White background */
+  padding: 15px; /* Add padding inside the card */
+  border-radius: 8px; /* Round the card corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+.project h3 {
+  margin: 0 0 10px; /* Add spacing below the title */
+  font-size: 1.2rem; /* Adjust title size */
+}
+
+.project p {
+  margin: 0; /* Remove default paragraph margin */
+  font-size: 1rem; /* Adjust description size */
+  color: #555; /* Subtle text color */
+}
+
+
+
 
 .container {
   max-width: 800px;
@@ -86,11 +176,11 @@ nav a:hover {
   padding: 20px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
+h1.header {
+  font-size: 2rem; /* Adjust font size */
+  font-weight: normal; /* Remove boldness */
+  margin-bottom: 10px; /* Add spacing below the heading */
+  color: #333; /* Use a neutral color */
 }
 
 p {
