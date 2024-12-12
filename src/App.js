@@ -14,7 +14,7 @@ function App() {
             <Link to="/COGS125">XINJIE ZHOU</Link>
           </h1>
           <nav>
-            <Link to="COGS125">Home</Link>
+            <Link to="/COGS125">Home</Link>
             <Link to="/work">Work</Link>
             <Link to="/resume">Resume</Link>
           </nav>
