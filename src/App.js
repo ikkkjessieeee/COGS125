@@ -9,13 +9,19 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <Link to="/">About Me</Link>
-          <Link to="/work">Work</Link>
-          <Link to="/resume">Resume</Link>
-        </nav>
+        <header>
+          <h1>
+            XINJIE ZHOU
+          </h1>
+          <nav>
+            <Link to="/">About Me</Link>
+            <Link to="/work">Work</Link>
+            <Link to="/resume">Resume</Link>
+          </nav>
+        </header>
+          
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route index={true} path="/" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
@@ -25,3 +31,6 @@ function App() {
 }
 
 export default App;
+
+
+
