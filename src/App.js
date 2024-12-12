@@ -7,21 +7,21 @@ import "./styles.css";
 
 function App() {
   return (
-    <Router>
+    <Router >
       <div>
         <header>
           <h1>
             XINJIE ZHOU
           </h1>
           <nav>
-            <Link to="/">About Me</Link>
+            <Link to="/COGS125">About Me</Link>
             <Link to="/work">Work</Link>
             <Link to="/resume">Resume</Link>
           </nav>
         </header>
           
         <Routes>
-          <Route index={true} path="/" element={<About />} />
+          <Route index={true} path="/COGS125" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
